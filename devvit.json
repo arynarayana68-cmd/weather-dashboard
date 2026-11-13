@@ -1,0 +1,23 @@
+{
+  "name": "reddit-retention-app",
+  "version": "1.0.0",
+  "entrypoints": {
+    "default": {
+      "entry": "dist/client/index.html"
+    }
+  },
+  "server": {
+    "dir": "dist/server",
+    "entry": "index.cjs"
+  },
+  "scripts": {
+    "build": "vite build"
+  },
+  "permissions": {
+    "http": {
+      "outbound": [
+        "https://*"
+      ]
+    }
+  }
+}
